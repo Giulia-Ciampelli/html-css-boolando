@@ -6,6 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* se metto font-size nella regione common, per qualche motivo le immagini si spostano */
+
 :root {
     --header-colour: #ff6900;
     --discount-colour: #ff0000;
@@ -43,7 +45,7 @@ li {
     width: calc((100% / 3) - 5rem);
     height: 500px;
     margin: 1.5rem .6rem 3.5rem .6rem;
-   
+
 }
 
 .over {
@@ -96,25 +98,26 @@ div.box {
     position: relative;
 }
 
-.inside-box{
+.inside-box {
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
-
-.inside-box div:nth-child(2){
+.inside-box div:nth-child(2) {
     position: absolute;
     top: 100%;
     width: max-content;
 }
 
-.discount, .sustainable {
+.discount,
+.sustainable {
     color: white;
+    font-size: small;
+    padding: .25rem;
 }
 
 .discount {
-
     background-color: var(--discount-colour);
 }
 
@@ -122,85 +125,21 @@ div.box {
     background-color: var(--sustainable-colour);
 }
 
-.tags{
+.tags {
     position: relative;
     top: 90%;
     left: 0%;
 }
 
-div.images div.box:nth-child(1){
-    background-image: url(../assets/img/1.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
+/* #region descrizioni */
+.inside-box {
+    font-size: small;
 }
 
-div.images div.box:nth-child(1):hover{
-    background-image: url(../assets/img/1b.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+/* #endregion descrizioni */
 
-div.images div.box:nth-child(2){
-    background-image: url(../assets/img/2.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(2):hover{
-    background-image: url(../assets/img/2b.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(3){
-    background-image: url(../assets/img/3.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(3):hover{
-    background-image: url(../assets/img/3b.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(4){
-    background-image: url(../assets/img/4.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(4):hover{
-    background-image: url(../assets/img/4b.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(5){
-    background-image: url(../assets/img/5.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(5):hover{
-    background-image: url(../assets/img/5b.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(6){
-    background-image: url(../assets/img/6.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-div.images div.box:nth-child(6):hover{
-    background-image: url(../assets/img/6b.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.bg_heart{
+/* #region cuori */
+.bg-heart {
     position: absolute;
     background-color: white;
     padding: 10px;
@@ -208,7 +147,7 @@ div.images div.box:nth-child(6):hover{
     right: 0;
 }
 
-.bg_heart:hover{
+.bg-heart:hover {
     position: absolute;
     background-color: white;
     padding: 10px;
@@ -216,11 +155,128 @@ div.images div.box:nth-child(6):hover{
     right: 0;
     color: red;
 }
+
+/* #endregion cuori */
+
+/* #region box immagini */
+div.images div.box:nth-child(1) {
+    background-image: url(../assets/img/1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(1):hover {
+    background-image: url(../assets/img/1b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(2) {
+    background-image: url(../assets/img/2.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(2):hover {
+    background-image: url(../assets/img/2b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(3) {
+    background-image: url(../assets/img/3.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(3):hover {
+    background-image: url(../assets/img/3b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(4) {
+    background-image: url(../assets/img/4.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(4):hover {
+    background-image: url(../assets/img/4b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(5) {
+    background-image: url(../assets/img/5.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(5):hover {
+    background-image: url(../assets/img/5b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(6) {
+    background-image: url(../assets/img/6.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(6):hover {
+    background-image: url(../assets/img/6b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* #endregion box immagini */
+
+/* #region prezzi */
+.red {
+    font-size: small;
+    font-weight: 700;
+    color: red;
+}
+
+.slash {
+    font-size: small;
+    text-decoration: line-through;
+}
+
+/* #endregion prezzi */
+
 /* #endregion main */
 
 /* #region footer */
 footer {
     background-color: var(--footer-colour);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: small;
+}
+
+h3 {
+    margin-left: 8px;
+}
+
+.sect1 {
+    padding-left: 2rem;
+}
+
+.sect2 {
+    padding-right: 2rem;
+}
+
+.sect2>p {
+    padding-bottom: 1rem;
+}
+
+.sect2>img {
+    width: 20px;
 }
 
 /* #endregion footer */
