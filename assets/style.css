@@ -25,6 +25,10 @@ ul.unstyled {
     display: none;
 }
 
+.images>div {
+    position: relative;
+}
+
 /* #endregion common */
 
 /* #region header */
