@@ -40,11 +40,10 @@ li {
 }
 
 .box {
-    position: relative;
-    width: calc(100% / 3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: calc((100% / 3) - 5rem);
+    height: 500px;
+    margin: 1.5rem .6rem 3.5rem .6rem;
+   
 }
 
 .over {
@@ -76,10 +75,6 @@ nav>div {
     justify-content: flex-end;
 }
 
-.utilities>img {
-    padding: .25rem;
-}
-
 #logo {
     width: 15%;
 }
@@ -94,16 +89,24 @@ nav>div {
     justify-content: center;
 }
 
-.box>img {
-    width: 60%;
-}
-
-.box>div {
+div.box {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     position: relative;
-    top: 0;
-    left: -25px;
+}
+
+.inside-box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.inside-box div:nth-child(2){
+    position: absolute;
+    top: 100%;
+    width: max-content;
 }
 
 .discount, .sustainable {
@@ -111,21 +114,113 @@ nav>div {
 }
 
 .discount {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
     background-color: var(--discount-colour);
 }
 
 .sustainable {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background-color: var(--sustainable-colour);
 }
 
+.tags{
+    position: relative;
+    top: 90%;
+    left: 0%;
+}
+
+div.images div.box:nth-child(1){
+    background-image: url(../assets/img/1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(1):hover{
+    background-image: url(../assets/img/1b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(2){
+    background-image: url(../assets/img/2.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(2):hover{
+    background-image: url(../assets/img/2b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(3){
+    background-image: url(../assets/img/3.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(3):hover{
+    background-image: url(../assets/img/3b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(4){
+    background-image: url(../assets/img/4.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(4):hover{
+    background-image: url(../assets/img/4b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(5){
+    background-image: url(../assets/img/5.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(5):hover{
+    background-image: url(../assets/img/5b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(6){
+    background-image: url(../assets/img/6.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.images div.box:nth-child(6):hover{
+    background-image: url(../assets/img/6b.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg_heart{
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    top: 2%;
+    right: 0;
+}
+
+.bg_heart:hover{
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    top: 2%;
+    right: 0;
+    color: red;
+}
 /* #endregion main */
 
 /* #region footer */
+footer {
+    background-color: var(--footer-colour);
+}
 
 /* #endregion footer */
