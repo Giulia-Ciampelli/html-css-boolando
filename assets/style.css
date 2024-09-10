@@ -1,5 +1,40 @@
+/* #region common */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --header-colour: #ff6900;
+    --discount-colour: #ff0000;
+    --sustainable-colour: #008000;
+    --footer-colour: #1a1a1a;
+}
+
+ul.unstyled {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.hover:hover {
+    cursor: pointer;
+    display: none;
+}
+
+/* #endregion common */
+
+/* #region header */
+
+/* #endregion header */
+
+/* #region main */
+
+/* #endregion main */
+
+/* #region footer */
+
+/* #endregion footer */
