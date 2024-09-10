@@ -47,6 +47,10 @@ li {
     align-items: center;
 }
 
+.over {
+    z-index: 1;
+}
+
 /* #endregion common */
 
 /* #region header */
@@ -100,6 +104,24 @@ nav>div {
     position: relative;
     top: 0;
     left: -25px;
+}
+
+.discount, .sustainable {
+    color: white;
+}
+
+.discount {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--discount-colour);
+}
+
+.sustainable {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--sustainable-colour);
 }
 
 /* #endregion main */
