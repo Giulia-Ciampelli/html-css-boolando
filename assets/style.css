@@ -14,10 +14,15 @@
 
 ul.unstyled {
     list-style: none;
+    display: flex;
 
     a {
         text-decoration: none;
     }
+}
+
+li {
+    padding: .5rem;
 }
 
 .hover:hover {
@@ -32,6 +37,35 @@ ul.unstyled {
 /* #endregion common */
 
 /* #region header */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--header-colour);
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+nav>div {
+    width: 20%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.nav {
+    width: 20%;
+    justify-content: flex-end;
+}
+
+.utilities>img {
+    padding: .25rem;
+}
+
+#logo {
+    width: 15%;
+}
 
 /* #endregion header */
 
